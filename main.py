@@ -53,5 +53,5 @@ while 1:
     responses = client.idle.wait(timeout=60)
     if responses:
         for msg in client.fetch(A(seen=False)):
-            res = chatgpt(f'Summarize in Polish email from \"{msg.from_}\" with subject \"{msg.subject}\".')
+            res = chatgpt(f'Summarize in one sentence in Polish email from \"{msg.from_}\" with subject \"{msg.subject}\".')
             send_pushover(res, msg.from_)
