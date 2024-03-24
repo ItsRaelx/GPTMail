@@ -1,4 +1,4 @@
-# GPTMail
+# MailSummary
 This script is a simple tool for generating summaries of incoming emails in Polish using the OpenAI GPT-3 model (text-davinci-003). Upon receiving a new email, the script generates a summary and then sends it as a notification via the Pushover service.
 
 
